@@ -1,0 +1,149 @@
+ /* Reset */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Cor de fundo e fontes */
+ body {
+     line-height: 1.6;
+     font-family: "Roboto Mono", monospace;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     color: #4a5568;
+     background-color: #faf8f5;
+ }
+
+ h1,
+ h2 {
+     font-family: "Roboto Slab", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 700;
+     font-style: normal;
+     color: #2d3748;
+ }
+
+ h4 {
+     font-family: "Roboto Slab", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     color: #4a5568;
+ }
+
+ a {
+     text-decoration: none;
+     color: #2d3748;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ /* Cabeçalho */
+ header {
+     display: flex;
+     gap: 30px;
+     align-items: center;
+ }
+
+ /* Sombra da foto */
+ .imagem img {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     object-fit: cover;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+ }
+
+ /* Centralização do currículo na página */
+ header,
+ section {
+     max-width: 900px;
+     margin: 20px auto;
+ }
+
+ /* Linhas Profissão e Localização */
+ header h2 {
+     border-bottom: 1px solid #b9bdc2;
+ }
+
+ /* Linhas sub-títulos */
+ section h2 {
+     border-bottom: 1px solid #b9bdc2;
+     display: inline-block;
+     margin-bottom: 15px;
+ }
+
+ /* Caixas e sombras */
+ section {
+     background-color: #ffffff;
+     border-radius: 8px;
+     padding: 15px;
+     border-left: 5px solid #b4b7b9;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ /* Efeito de hover nas caixas */
+ section:hover {
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 16px 32px;
+     transform: translateY(-5px);
+ }
+
+ /* Bullet points */
+ section ul {
+     list-style-type: disc;
+     padding-left: 30px;
+ }
+
+ .contato-lista {
+     list-style-type: none;
+     padding: 0px;
+ }
+
+ .contato-lista li {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .formacao-lista {
+        list-style-type: none;
+        padding: 0px;
+ }
+
+ .formacao-lista li {
+    margin-bottom: 10px;
+     padding-left: 10px;
+     border-left: 3px solid #b4b7b9;
+ }
+
+ /* Skill pills */
+
+ .habilidades-lista {
+     display: flex;
+     flex-wrap: wrap;
+     list-style-type: none;
+     gap: 10px;
+     padding: 0;
+     margin-top: 10px;
+ }
+
+ .habilidades-lista li {
+     background-color: #e2e8f0;
+     color: #2d3748;
+     border-radius: 20px;
+     padding: 8px 15px;
+     font-size: 0.9rem;
+     font-weight: 700;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .habilidades-lista li:hover {
+     background-color: #2d3748;
+     transform: translateY(-2px);
+     color: #faf8f5;
+ }
