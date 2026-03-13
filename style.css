@@ -14,6 +14,7 @@
      font-style: normal;
      color: #4a5568;
      background-color: #faf8f5;
+     padding: 20px;
  }
 
  h1,
@@ -60,17 +61,17 @@
 
  /* Centralização do currículo na página */
  header,
- section {
+ section,
+ .colunas {
      max-width: 900px;
      margin: 20px auto;
  }
 
- /* Linhas Profissão e Localização */
+ /* Linhas */
  header h2 {
      border-bottom: 1px solid #b9bdc2;
  }
 
- /* Linhas sub-títulos */
  section h2 {
      border-bottom: 1px solid #b9bdc2;
      display: inline-block;
@@ -93,36 +94,68 @@
      transform: translateY(-5px);
  }
 
- /* Bullet points */
- section ul {
-     list-style-type: disc;
-     padding-left: 30px;
+ /* Botoes de contato */
+ .contato-lista {
+     display: flex;
+     gap: 15px;
+     margin-top: 15px;
+     list-style-type: none;
  }
 
- .contato-lista {
+ .contato-lista a {
+     width: 45px;
+     height: 45px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #e2e8f0;
+     color: #2d3748;
+     border-radius: 100%;
+     transition: all 0.3s ease-in-out;
+     font-size: 1.5rem;
+ }
+
+ .contato-lista a:hover {
+     background-color: #2d3748;
+     transform: translateY(-2px);
+     color: #faf8f5;
+ }
+
+ /* Colunas */
+ .colunas {
+     display: flex;
+     gap: 20px;
+     align-items: flex-start;
+ }
+
+ .colunas section {
+     margin: 0;
+     flex: 1;
+ }
+
+ .grids {
+     display: grid;
+     gap: 20px;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .grids h3 {
+     margin-bottom: 10px;
+ }
+
+ /*Education*/
+ .formacao-lista {
      list-style-type: none;
      padding: 0px;
  }
 
- .contato-lista li {
-     display: flex;
-     align-items: center;
-     gap: 10px;
- }
-
- .formacao-lista {
-        list-style-type: none;
-        padding: 0px;
- }
-
  .formacao-lista li {
-    margin-bottom: 10px;
+     margin-bottom: 10px;
      padding-left: 10px;
      border-left: 3px solid #b4b7b9;
  }
 
  /* Skill pills */
-
  .habilidades-lista {
      display: flex;
      flex-wrap: wrap;
@@ -140,6 +173,7 @@
      font-size: 0.9rem;
      font-weight: 700;
      transition: all 0.3s ease-in-out;
+     text-align: center;
  }
 
  .habilidades-lista li:hover {
@@ -147,3 +181,78 @@
      transform: translateY(-2px);
      color: #faf8f5;
  }
+
+ /* Projects */
+
+ .projetos-lista {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     padding: 0;
+     margin-top: 10px;
+ }
+
+ .projetos-lista article {
+     background-color: #e2e8f0;
+     color: #2d3748;
+     border-radius: 20px;
+     padding: 8px 15px;
+     font-size: 0.9rem;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .projetos-lista article h2 {
+     display: block;
+ }
+
+ .projetos-lista img {
+     margin-top: 10px;
+     border-radius: 20px;
+     margin-bottom: 20px;
+     max-width: 100%;
+ }
+
+ .projetos-lista ul {
+     list-style-type: none;
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .projetos-lista article:hover {
+     background-color: #2d3748;
+     transform: translateY(-2px);
+     color: #faf8f5;
+ }
+
+ .projetos-lista article:hover a {
+     color: #faf8f5;
+     transition: all 0.4s ease-in-out;
+ }
+
+ .projetos-lista article:hover h2 {
+     color: #faf8f5;
+     transition: all 0.4s ease-in-out;
+ }
+
+ /* Footer */
+ footer {
+     text-align: center;
+     padding: 20px;
+     font-size: 0.9rem;
+     color: #4a5568;
+ }
+
+ @media (max-width: 768px) {
+     .colunas {
+         flex-direction: column;
+     }
+     .grids {
+         grid-template-columns: 1fr;
+     }
+      .colunas section {
+         margin-bottom: 20px;
+     }  
+ }
+
+ /* Dark mode is coming as soon as I learn how to use JS */
